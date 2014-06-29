@@ -1,0 +1,18 @@
+{
+  "name": "base-stylesheet",
+  "author": "Tyler Childs",
+  "contributors": [
+    "Tyler Childs <tchilds@inflection.com>"
+  ],
+  "description": "Base stylesheet used for new projects",
+  "homepage": "",
+  "version": "0.0.0",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-clean": "latest",
+    "gulp-swig": "latest"
+  }
+}
