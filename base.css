@@ -1,0 +1,237 @@
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,600,700,300");
+@import url("http://fonts.googleapis.com/css?family=PT+Mono");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: "Source Sans Pro", Verdana, Geneva, sans-serif;
+  color: #3c3c3d;
+  font-size: 1.5rem;
+  line-height: 1.44; }
+
+h1, h2, h3 {
+  font-family: "PT Sans", Futura, "Trebuchet MS", Arial, sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold; }
+
+pre, code, samp, kbd {
+  font-family: "PT Mono", monospace;
+  background-color: #efeff0;
+  border: 1px solid #dededf;
+  border-radius: 2px;
+  font-size: 1.3rem; }
+
+code, samp, kbd {
+  padding: 0 4px; }
+
+pre {
+  padding: 8px; }
+  pre code, pre samp, pre kbd {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 13px 0 21px;
+  line-height: 1.2; }
+  @media screen and (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+      padding-bottom: 21px 0 34px; } }
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    padding-top: 0; }
+
+h1 {
+  font-size: 3.4rem;
+  font-weight: bold; }
+
+h2 {
+  font-size: 2.8rem; }
+
+h3 {
+  font-size: 2.4rem; }
+
+h4 {
+  font-size: 2rem;
+  font-weight: bold; }
+
+h5 {
+  font-size: 2rem;
+  font-weight: normal; }
+
+h6 {
+  font-size: 2rem;
+  font-style: italic; }
+
+a:link {
+  color: #216a9e;
+  text-decoration: underline; }
+
+a:visited {
+  color: purple; }
+
+a:hover, a:focus {
+  color: #184f74; }
+
+a:active {
+  color: #2a89c8; }
+
+img {
+  max-width: 100%; }
+
+hr, pre, blockquote {
+  margin-bottom: 13px; }
+  @media screen and (min-width: 768px) {
+    hr, pre, blockquote {
+      margin-bottom: 21px; } }
+
+p, img, ul, ol, dl, dd, figure, figcaption {
+  padding-bottom: 13px; }
+  @media screen and (min-width: 768px) {
+    p, img, ul, ol, dl, dd, figure, figcaption {
+      padding-bottom: 21px; } }
+
+hr {
+  border-top: 1px solid #cdcdce;
+  border-bottom: 1px solid #efeff0;
+  border-left: none;
+  border-right: none; }
+
+blockquote {
+  margin-left: 13px;
+  border-left: 3px solid #cdcdce;
+  padding: 8px 13px; }
+  @media screen and (min-width: 768px) {
+    blockquote {
+      margin-left: 21px;
+      border-left: 5px solid #cdcdce;
+      padding: 13px 21px; } }
+  blockquote p:last-child {
+    padding-bottom: 0; }
+
+ol, ul {
+  margin-left: 21px; }
+  @media screen and (min-width: 768px) {
+    ol, ul {
+      margin-left: 34px; } }
+
+ol {
+  list-style-type: decimal; }
+
+ul {
+  list-style-type: disc; }
+
+dt {
+  font-style: italic; }
+
+dd {
+  text-indent: 21px; }
+  @media screen and (min-width: 768px) {
+    dd {
+      text-indent: 34px; } }
+
+figure {
+  display: table;
+  margin: 0 auto;
+  padding-left: 13px;
+  padding-right: 13px; }
+  @media screen and (min-width: 768px) {
+    figure {
+      padding-left: 21px;
+      padding-right: 21px; } }
+  figure img {
+    display: table;
+    margin: 0 auto; }
+
+figcaption, small, sub, sup {
+  font-size: 1.3rem; }
+
+caption, figcaption {
+  text-align: center;
+  font-style: italic; }
+
+em, cite, i {
+  font-style: italic; }
+
+strong, var, b {
+  font-weight: bold; }
+
+q:before {
+  content: "'"; }
+q:after {
+  content: "'"; }
+q > q {
+  font-style: italic; }
+
+dfn, abbr {
+  border-bottom: 1px dotted #7d7d7e;
+  cursor: default; }
+
+sub {
+  vertical-align: sub; }
+
+sup {
+  vertical-align: super; }
+
+table {
+  margin: 0 auto; }
+  table caption {
+    margin-bottom: 5px; }
+  table thead {
+    background-color: #216a9e;
+    color: #fff; }
+  table tbody {
+    background-color: #efeff0; }
+    table tbody tr:nth-child(2n) {
+      background-color: #dededf; }
+  table th, table td {
+    padding: 5px 8px; }
+    @media screen and (min-width: 768px) {
+      table th, table td {
+        padding: 8px 13px; } }
+  table tfoot {
+    background-color: #cdcdce; }
+    table tfoot td {
+      text-align: center; }

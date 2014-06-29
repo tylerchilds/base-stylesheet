@@ -16,7 +16,7 @@ gulp.task('sass', function() {
 
     var stream = gulp.src('src/scss/base.scss')
         .pipe(gulp.dest('./dist/scss'))
-        .pipe(sass())
+        .pipe(sass({ includePaths : ['src/scss'] }))
         .pipe(rename('base.css'))
         .pipe(gulp.dest('./dist/css'))
         .pipe(gulp.dest('./'))

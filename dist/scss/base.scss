@@ -1,0 +1,312 @@
+@import 'variables';
+@import 'reset';
+
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,600,700,300");
+@import url("http://fonts.googleapis.com/css?family=PT+Mono");
+
+$heading: "PT Sans", Futura, "Trebuchet MS", Arial, sans-serif;
+$body: "Source Sans Pro", Verdana, Geneva, sans-serif;
+$monospace: "PT Mono", monospace;
+
+*{
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+	font-size: 62.5%;
+
+	@media screen and (min-width: 768px){
+		font-size: 75%;
+	}
+}
+
+body{
+	font-family: $body;
+	color: $gray1;
+	font-size: $font-size;
+	line-height: $line-height;
+}
+
+h1, h2, h3{
+	font-family: $heading;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+pre,
+code,
+samp,
+kbd{
+	font-family: $monospace;
+	background-color: $gray6;
+	border: 1px solid $gray5;
+	border-radius: 2px;
+	font-size: $font-size - .2;
+}
+
+code,
+samp,
+kbd{
+	padding: 0 4px;
+}
+
+pre{
+	padding: 8px;
+
+	code,
+	samp,
+	kbd{
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+		padding: 0;
+	}
+}
+
+h1, h2, h3, h4, h5, h6{
+	padding: 13px 0 21px;
+	line-height: 1.2;
+
+	@media screen and (min-width: 768px){
+		padding-bottom: 21px 0 34px;
+	}
+
+	&:first-child{
+		padding-top: 0;
+	}
+}
+
+h1{
+	font-size: 3.4rem;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 2.8rem;
+}
+
+h3{
+	font-size: 2.4rem;
+}
+
+h4{
+	font-size: 2.0rem;
+	font-weight: bold;
+}
+
+h5{
+	font-size: 2.0rem;
+	font-weight: normal;
+}
+
+h6{
+	font-size: 2.0rem;
+	font-style: italic;
+}
+
+a:link{
+	color: $blue;
+	text-decoration: underline;
+}
+
+a:visited{
+	color: $purple;
+}
+
+a:hover,
+a:focus{
+	color: $blue-dark;
+}
+
+a:active{
+	color: $blue-light;
+}
+
+img{
+	max-width: 100%;
+}
+
+hr,
+pre,
+blockquote{
+	margin-bottom: 13px;
+
+	@media screen and (min-width: 768px){
+		margin-bottom: 21px;
+	}
+}
+
+p,
+img,
+ul,
+ol,
+dl,
+dd,
+figure,
+figcaption{
+	padding-bottom: 13px;
+
+	@media screen and (min-width: 768px){
+		padding-bottom: 21px;
+	}
+}
+
+hr{
+	border-top: 1px solid $gray4;
+	border-bottom: 1px solid $gray6;
+	border-left: none;
+	border-right: none;
+}
+
+blockquote{
+	margin-left: 13px;
+	border-left: 3px solid $gray4;
+	padding: 8px 13px;
+
+	@media screen and (min-width: 768px){
+		margin-left: 21px;
+		border-left: 5px solid $gray4;
+		padding: 13px 21px;
+	}
+
+	p:last-child{
+		padding-bottom: 0;
+	}
+}
+
+ol,
+ul{
+	margin-left: 21px;
+
+	@media screen and (min-width: 768px){
+		margin-left: 34px;
+	}
+}
+
+ol{
+	list-style-type: decimal;
+}
+
+ul{
+	list-style-type: disc;
+}
+
+dt{
+	font-style: italic;
+}
+dd{
+	text-indent: 21px;
+
+	@media screen and (min-width: 768px){
+		text-indent: 34px;
+	}
+}
+
+figure{
+	display: table;
+	margin: 0 auto;
+	padding-left: 13px;
+	padding-right: 13px;
+
+	@media screen and (min-width: 768px){
+		padding-left: 21px;
+		padding-right: 21px;
+	}
+
+	img{
+		display: table;
+		margin: 0 auto;
+	}
+}
+
+figcaption,
+small,
+sub,
+sup{
+	font-size: $font-size - .2;
+}
+
+caption,
+figcaption{
+	text-align: center;
+	font-style: italic;
+}
+
+em,
+cite,
+i{
+	font-style: italic;
+}
+
+strong,
+var,
+b{
+	font-weight: bold;
+}
+
+q{
+	&:before{
+		content: "'";
+	}
+
+	&:after{
+		content: "'";
+	}
+
+	& > q{
+		font-style: italic;
+	}
+}
+
+dfn,
+abbr{
+	border-bottom: 1px dotted $gray3;
+	cursor: default;
+}
+
+sub{
+	vertical-align: sub;
+}
+sup{
+	vertical-align: super;
+}
+
+table{
+	margin: 0 auto;
+
+	caption{
+		margin-bottom: 5px;
+	}
+
+	thead{
+		background-color: $blue;
+		color: $white;
+	}
+
+	tbody{
+		background-color: $gray6;
+
+		tr:nth-child(2n){
+			background-color: $gray5;
+		}
+	}
+
+	th, td{
+		padding: 5px 8px;
+
+		@media screen and (min-width: 768px){
+			padding: 8px 13px;
+		}
+	}
+
+	tfoot{
+		background-color: $gray4;
+
+		td{
+			text-align: center;
+		}
+	}
+}
