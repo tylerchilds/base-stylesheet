@@ -9,5 +9,5 @@ Base Stylesheet uses [Eric Meyer's reset.css](http://meyerweb.com/eric/tools/css
 Getting Started
 ---------------
 
-1. Download [base.min.css](https://raw.github.com/tylerchilds/mosaic/base-stylesheet/css/base.min.css)
+1. Download [base.min.css](https://raw.githubusercontent.com/tylerchilds/base-stylesheet/master/base.min.css)
 2. Add `<link rel="stylesheet" href="base.min.css">` to your html. There's no need to add a reset stylesheet, this includes the reset styles.
